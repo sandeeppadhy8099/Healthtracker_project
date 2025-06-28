@@ -1,2 +1,2 @@
 # Healthtracker_project
-A Health Tracker App is a mobile or web-based application that enables users to monitor, record, and analyze various aspects of their physical health and fitness.
+A Health Tracker App is a mobile or web-based application that enables users to monitor, record, and analyze various aspects of their physical health and fitness. These apps are designed to assist individuals in maintaining a healthy lifestyle by providing insights into their daily activities, eating habits, sleep patterns, and more. This document explains in detail how such an app works, covering the architecture, functionalities, technologies involved, and the overall user experience.
