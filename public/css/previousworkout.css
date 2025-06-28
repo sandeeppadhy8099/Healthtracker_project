@@ -1,0 +1,115 @@
+/* Reset and Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* Nice gradient background */
+    color: #333;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 3rem;
+    margin-top: 30px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+/* Track Workout Button */
+.track-workout-btn-container {
+    margin: 20px 0;
+}
+
+.track-workout-btn {
+    background-color: #ffffff;
+    color: #7b2cbf;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.track-workout-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Filter Form */
+.filter-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.input-field {
+    padding: 12px;
+    margin: 5px;
+    width: 45%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.submit-btn {
+    padding: 12px 20px;
+    background-color: #7b2cbf;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #5a189a;
+}
+
+/* Table Styles */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #7b2cbf;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* No Data Message */
+.no-data {
+    font-size: 1.5rem;
+    color: #ff4d4f;
+    margin-top: 20px;
+}

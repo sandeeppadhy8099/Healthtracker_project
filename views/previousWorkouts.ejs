@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Previous Workouts</title>
+  <link rel="stylesheet" href="/css/previousworkout.css">
+</head>
+<body>
+  <h1>Your Previous Workouts</h1>
+  <h2>Total Calories Burned: <%= totalCalories %> cal</h2>
+
+  <div class="track-workout-btn-container">
+    <a href="/tracker/dashboard" class="track-workout-btn">Track a New Workout</a>
+  </div>
+
+  <form method="get" action="/tracker/previous" class="filter-form">
+    <input type="text" name="search" placeholder="Workout type" class="input-field" />
+    <input type="date" name="date" class="input-field" />
+    <button type="submit" class="submit-btn">Search</button>
+  </form>
+
+  <% if (workouts.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Workout Type</th>
+          <th>Duration (min)</th>
+          <th>Calories Burned</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% workouts.forEach(workout => { %>
+          <tr>
+            <td><%= workout.workout_type %></td>
+            <td><%= workout.duration %></td>
+            <td><%= workout.calories_burned %></td>
+            <td><%= workout.workout_date ? workout.workout_date.toISOString().split('T')[0] : 'No date available' %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <p class="no-data">No workouts found.</p>
+  <% } %>
+
+</body>
+</html>

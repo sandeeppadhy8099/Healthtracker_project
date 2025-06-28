@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to your Health Tracker</h1>
+
+    <div class="back-btn-container">
+      <a href="/auth/register" class="back-btn">← Back to Register</a>
+    </div>
+
+    <form action="/tracker/track" method="POST">
+      <input name="workoutType" placeholder="Workout Type" required class="input-field" />
+      <input name="duration" type="number" placeholder="Duration (mins)" required class="input-field" />
+      <input name="caloriesBurned" type="number" placeholder="Calories Burned" required class="input-field" />
+      <button type="submit" class="submit-btn">Track Workout</button>
+    </form>
+
+    <div class="workout-buttons">
+      <a href="/tracker/previous" class="button">Click Here to Track Previous Workouts</a>
+    </div>
+  </div>
+</body>
+</html>
